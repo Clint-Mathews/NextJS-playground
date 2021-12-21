@@ -18,5 +18,103 @@
       "price": 300,
       "description": "Description 3"
     }
+  ],
+  "news": [
+    {
+      "id": 1,
+      "title": "News 1",
+      "category": "Sports",
+      "description": "Description 1"
+    },
+    {
+      "id": 2,
+      "title": "News 2",
+      "category": "Politics",
+      "description": "Description 2"
+    },
+    {
+      "id": 3,
+      "title": "News 3",
+      "category": "Sports",
+      "description": "Description 3"
+    }
+  ],
+  "dashboard": {
+    "post": 5,
+    "likes": 1002,
+    "followers": 12,
+    "following": 123
+  },
+  "events": [
+    {
+      "id": 1,
+      "title": "Event 1",
+      "category": "Sports",
+      "description": "Description 1",
+      "date": "April 25"
+    },
+    {
+      "id": 2,
+      "title": "Event 2",
+      "category": "Politics",
+      "description": "Description 2",
+      "date": "May 25"
+    },
+    {
+      "id": 3,
+      "title": "Event 3",
+      "category": "Sports",
+      "description": "Description 3",
+      "date": "October 25"
+    },
+    {
+      "id": 4,
+      "title": "Event 4",
+      "category": "Technology",
+      "description": "Description 4",
+      "date": "November 25"
+    },
+    {
+      "id": 5,
+      "title": "Event 5",
+      "category": "Politics",
+      "description": "Description 5",
+      "date": "June 25"
+    },
+    {
+      "id": 6,
+      "title": "Event 6",
+      "category": "Technology",
+      "description": "Description 6",
+      "date": "Januvary 25"
+    },
+    {
+      "id": 7,
+      "title": "Event 7",
+      "category": "Technology",
+      "description": "Description 7",
+      "date": "April 25"
+    },
+    {
+      "id": 8,
+      "title": "Event 8",
+      "category": "Politics",
+      "description": "Description 8",
+      "date": "May 25"
+    },
+    {
+      "id": 9,
+      "title": "Event 9",
+      "category": "Sports",
+      "description": "Description 9",
+      "date": "July 25"
+    },
+    {
+      "id": 10,
+      "title": "Event 10",
+      "category": "Technology",
+      "description": "Description 10",
+      "date": "December 25"
+    }
   ]
 }
