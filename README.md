@@ -1,3 +1,3 @@
 ## NextJS-playground
 
-Working NextJS basic code sample.
+Working NextJS basic code sample with all functionalities.
