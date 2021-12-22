@@ -1,8 +1,8 @@
 import { comments } from "../../data/comment";
-
+import styles from "../../styles/CommentsDetails.module.scss";
 const CommentDetails = ({ comment }) => {
   return (
-    <div>
+    <div className={styles.highlight}>
       <h1>Comment Details</h1>
       <h2>{comment.id}</h2>
       <p>{comment.text}</p>

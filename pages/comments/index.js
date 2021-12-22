@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import styles from "../../styles/Comments.module.scss";
 const Comments = () => {
   const [commentsList, setCommentsList] = useState([]);
   const [comment, setComment] = useState("");
@@ -36,11 +36,15 @@ const Comments = () => {
     fetchComments();
   }
   return (
-    <>
+    <div className={styles.highlight}>
       <h1>Comments Page</h1>
       <input value={comment} onChange={(e) => setComment(e.target.value)} />
-      <button onClick={addComment}>Add Comment</button>
-      <button onClick={fetchComments}>Load Comments</button>
+      <button className="btn btn-primary" onClick={addComment}>
+        Add Comment
+      </button>
+      <button className="btn btn-success" onClick={fetchComments}>
+        Load Comments
+      </button>
       {commentsList.map((data) => {
         return (
           <div key={data.id}>
@@ -48,12 +52,22 @@ const Comments = () => {
               {data.id}
               {data.text}
             </h2>
-            <button onClick={() => updateComment(data.id)}>Update</button>
-            <button onClick={() => deleteComment(data.id)}>Delete</button>
+            <button
+              className="btn btn-warning"
+              onClick={() => updateComment(data.id)}
+            >
+              Update
+            </button>
+            <button
+              className="btn btn-warning"
+              onClick={() => deleteComment(data.id)}
+            >
+              Delete
+            </button>
           </div>
         );
       })}
-    </>
+    </div>
   );
 };
 export default Comments;
