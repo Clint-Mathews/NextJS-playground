@@ -1,5 +1,7 @@
 import { useState } from "react";
+import Footer from "../../components/layout/footer";
 import styles from "../../styles/Comments.module.scss";
+import Head from "next/head";
 const Comments = () => {
   const [commentsList, setCommentsList] = useState([]);
   const [comment, setComment] = useState("");
@@ -37,6 +39,10 @@ const Comments = () => {
   }
   return (
     <div className={styles.highlight}>
+      <Head>
+        <title>Comments</title>
+        <meta name="Description" content="Comments" />
+      </Head>
       <h1>Comments Page</h1>
       <input value={comment} onChange={(e) => setComment(e.target.value)} />
       <button className="btn btn-primary" onClick={addComment}>
@@ -71,3 +77,12 @@ const Comments = () => {
   );
 };
 export default Comments;
+
+Comments.getLayout = function pageLayout(page) {
+  return (
+    <>
+      {page}
+      <Footer />
+    </>
+  );
+};

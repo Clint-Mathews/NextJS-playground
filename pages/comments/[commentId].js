@@ -29,11 +29,12 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-  const response = await fetch("http://localhost:3000/api/comments");
-  const resData = await response.json();
-  const paths = resData.map((item) => {
-    return { params: { commentId: `${item.id}` } };
-  });
+  // const response = await fetch("http://localhost:3000/api/comments");
+  // const resData = await response.json();
+  const paths = [];
+  // resData.map((item) => {
+  //   return { params: { commentId: `${item.id}` } };
+  // });
   return {
     paths,
     fallback: false,
